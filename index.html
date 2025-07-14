@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Matching Game</title>
+    <link rel="shortcut icon" href="Images/fevicon.PNG" />
+    <link rel="stylesheet" href="gameStyle.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="gameScript.js"></script>
+</head>
+
+<body>
+
+    <!-- Overlay Screen: Instructions & Congrats -->
+    <div id="ol">
+        <div id="instBox">
+            <div id="inst">
+                <h2>🧠 Welcome to Memory Match!</h2>
+                <ul>
+                    <li>Flip cards to reveal emojis.</li>
+                    <li>Match all identical pairs to win.</li>
+                    <li>If unmatched, the cards flip back.</li>
+                </ul>
+                <p style="margin-top: 10px; font-size: 18px;">Choose a mode to begin:</p>
+                <div class="button-container">
+                    <button onclick="start(3, 4)">3 × 4</button>
+                    <button onclick="start(4, 4)">4 × 4</button>
+                    <button onclick="start(4, 5)">4 × 5</button>
+                    <button onclick="start(5, 6)">5 × 6</button>
+                    <button onclick="start(6, 6)">6 × 6</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Bar -->
+    <!-- <div id="title-bar">
+        <span id="logo">🌟 MEMORY MATCHING GAME 🌟</span>
+    </div> -->
+
+    <!-- Stats -->
+    <div id="stats-bar" style="display: none;">
+        <span id="moves">Moves: 0</span>
+        <span id="time">Time: 00:00</span>
+    </div>
+
+
+    <!-- Game Board -->
+    <center>
+        <table cellspacing="0"></table>
+    </center>
+
+</body>
+
+</html>
